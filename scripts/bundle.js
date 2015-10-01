@@ -3,32 +3,32 @@
 
 var Router = Backbone.Router.extend({
 	routes: {
-		'loading': 'loadingScreen',
-		'menu': 'menuScreen',
-		'play': 'playScreen',
-		'leaders': 'leadersScreen',
-		'settings': 'settingsScreen'
+		'loading': 'loading',
+		'menu': 'menu',
+		'play': 'play',
+		'leaders': 'leaders',
+		'settings': 'settings'
 
 	},
-	loadingScreen: function loadingScreen() {
+	loading: function loading() {
 		$('section').hide();
-		$('#loadingScreen').show();
+		$('#loading').show();
 	},
-	menuScreen: function menuScreen() {
+	menu: function menu() {
 		$('section').hide();
-		$('#menuScreen').show();
+		$('#menu').show();
 	},
-	playScreen: function playScreen() {
+	play: function play() {
 		$('section').hide();
-		$('#playScreen').show();
+		$('#play').show();
 	},
-	leadersScreen: function leadersScreen() {
+	leaders: function leaders() {
 		$('section').hide();
-		$('#leadersScreen').show();
+		$('#leaders').show();
 	},
-	settingsScreen: function settingsScreen() {
+	settings: function settings() {
 		$('section').hide();
-		$('#settingsScreen').show();
+		$('#settings').show();
 	}
 
 });
